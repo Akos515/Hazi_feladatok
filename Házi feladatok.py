@@ -72,4 +72,20 @@ print()
 #     print(f"{x} egyenlő {z} + {y} összegével")
 # else:
 #     print("2 szám összege nem adja meg a 3. szám értékét")
+print()
 
+# x = int(input("írj be egy egész számot:"))
+# y = int(input("írj be egy egész számot:"))
+# z = int(input("írj be egy egész számot:"))
+# if x % 2 == 0 and y % 2 == 0 and z % 2 == 0:
+#     print("a számok párosak")
+# else:
+#     print("a számok nem párosak")
+print()
+
+# szam1 = int(input("írj be egy egész számot:"))
+# szam2 = int(input("írj be egy egész számot:"))
+# for i in range(szam1,szam2,1):
+#     if i % 2 == 0:
+#         print(i)
+print()
