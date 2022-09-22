@@ -89,3 +89,35 @@ print()
 #     if i % 2 == 0:
 #         print(i)
 print()
+
+# Készíts egy programot, amely a felhasználótól két külön kérdésben megkérdezi, hogy az ikrek (Henrik és Hanna)
+# jönnek-e ma kosrazni! Például így: Jön Henrik ma kosarazni? (igen/nem). A program írja ki, hogy melyik állítás igaz az alábbiak közül:
+# - egyikük sem jön kosarazni,
+# - mind a ketten jönnek kosarazni,
+# - csak az egyikük jön kosarazni.
+
+# henrik = (input("Jön Henrik ma kosarazni?: "))
+# hanna = (input("Jön Hanna ma kosarazni?: "))
+# if henrik == "igen" and hanna == "igen":
+#     print("mind a ketten jönnek kosarazni.")
+# elif henrik == "igen" and hanna == "nem" or henrik == "nem" and hanna == "igen":
+#     print("csak az egyikük jön kosarazni.")
+# else:
+#     print("egyikük sem jön kosarazni.")
+print()
+
+# Készíts egy programot, amely a felhasználó által megadott egész számról eldönti, hogy
+# - csak 3-mal osztható,
+# - csak 4-gyel osztható,
+# - 3-mal és 4-gyel is osztható,
+# - sem 3-mal, sem 4-gyel nem osztható!
+
+# valasz = int(input("Kérek egy számot: "))
+# if valasz % 3 == 0 and valasz % 4 == 0:
+#     print("3-mal és 4-gyel is osztható")
+# elif valasz % 3 == 0 and not valasz % 4 == 0:
+#     print("csak 3-mal osztható")
+# elif valasz % 4 == 0 and not valasz % 3 == 0:
+#     print("csak 4-gyel osztható")
+# else:
+#     print("sem 3-mal, sem 4-gyel nem osztható!")
