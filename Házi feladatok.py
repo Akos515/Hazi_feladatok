@@ -1,22 +1,22 @@
 #10 és 20 közötti számok kiiratása
-list = [5, 47, 8, 54, 6, 2, 15, 4, 1, 25, 10, 65, 17, 321]
-for i in list:
-    if i >= 10 and 20 >= i:
-        print(i, end=" ")
-print()
-
-#10-nél kisebb, 20-nál nagyobb
-for i in list:
-    if i > 20 or 10 > i:
-        print(i, end=" ")
-print()
+#
 
 #3 szám bekérése, majd legkisebb legnagyobb kiiratása
 
 # szam1 = int(input("Kérek egy számot"))
 # szam2 = int(input("Kérek egy számot"))
 # szam3 = int(input("Kérek egy számot"))
-# if szam1 > szam2 and szam1 > szam3:
+# if szam1 > szam2 and szam1 > szam3:list = [5, 47, 8, 54, 6, 2, 15, 4, 1, 25, 10, 65, 17, 321]
+# # for i in list:
+# #     if i >= 10 and 20 >= i:
+# #         print(i, end=" ")
+# # print()
+# #
+# # #10-nél kisebb, 20-nál nagyobb
+# # for i in list:
+# #     if i > 20 or 10 > i:
+# #         print(i, end=" ")
+# # print()
 #     print(f"a legnagyobb szám a {szam1}")
 # elif szam2 > szam1 and szam2 > szam3:
 #     print(f"a legnagyobb szám a {szam2}")
@@ -29,7 +29,7 @@ print()
 #     print(f"a legkisebb szám a {szam2}")
 # elif szam3 < szam1 and szam3 < szam2:
 #     print(f"a legkisebb szám a {szam3}")
-print()
+# print()
 
 # x = int(input("A dolgozat pontszáma:"))
 # if x < 50:
@@ -42,14 +42,14 @@ print()
 #     print("az érdemjegy: 4")
 # elif 85 < x:
 #     print("az érdemjegy: 5")
-print()
+# print()
 
 # szam = int(input("Adjon meg egy számot: "))
 # if szam % 5 == 0 or szam % 3 == 0:
 #     print("A szám osztható 3-mal vagy 5-tel")
 # else:
 #     print("A szám NEM osztható 3-mal vagy 5-tel")
-print()
+# print()
 
 # osszeg = int(input("Kérek egy maximumot"))
 # for i in range(10):
@@ -59,7 +59,7 @@ print()
 #     else:
 #         break
 # print("hiba")
-print()
+# print()
 
 # x = int(input("írj be egy egész számot:"))
 # y = int(input("írj be egy egész számot:"))
@@ -72,7 +72,7 @@ print()
 #     print(f"{x} egyenlő {z} + {y} összegével")
 # else:
 #     print("2 szám összege nem adja meg a 3. szám értékét")
-print()
+# print()
 
 # x = int(input("írj be egy egész számot:"))
 # y = int(input("írj be egy egész számot:"))
@@ -81,14 +81,14 @@ print()
 #     print("a számok párosak")
 # else:
 #     print("a számok nem párosak")
-print()
+# print()
 
 # szam1 = int(input("írj be egy egész számot:"))
 # szam2 = int(input("írj be egy egész számot:"))
 # for i in range(szam1,szam2,1):
 #     if i % 2 == 0:
 #         print(i)
-print()
+# print()
 
 # Készíts egy programot, amely a felhasználótól két külön kérdésben megkérdezi, hogy az ikrek (Henrik és Hanna)
 # jönnek-e ma kosrazni! Például így: Jön Henrik ma kosarazni? (igen/nem). A program írja ki, hogy melyik állítás igaz az alábbiak közül:
@@ -104,7 +104,7 @@ print()
 #     print("csak az egyikük jön kosarazni.")
 # else:
 #     print("egyikük sem jön kosarazni.")
-print()
+# print()
 
 # Készíts egy programot, amely a felhasználó által megadott egész számról eldönti, hogy
 # - csak 3-mal osztható,
@@ -121,3 +121,22 @@ print()
 #     print("csak 4-gyel osztható")
 # else:
 #     print("sem 3-mal, sem 4-gyel nem osztható!")
+import math
+
+sugar = int(input("Kérem a kör sugarát: "))
+kerulet = sugar * 2 * math.pi
+print(f"{round(kerulet)}")
+
+#A megadott szó: befogadóképességű
+#a felhasználótól kérjünk be egy karaktert és ellenőrizzük hogy megtalálható-e vagy sem a befogadóképességű szóban?
+#ha szerepel benne akkor hányadik karakter az?
+
+hely = 0
+valasz = input("Kérek egy betűt: ")
+for i in "befogadóképességű":
+    if valasz in i:
+        hely += 1
+    else:
+        print("A betű nem található")
+print(f"A betű a {hely} helyen található")
+
