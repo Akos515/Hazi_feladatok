@@ -132,11 +132,13 @@ print(f"{round(kerulet)}")
 #ha szerepel benne akkor hányadik karakter az?
 
 hely = 0
+szo = "befogadóképességű"
 valasz = input("Kérek egy betűt: ")
-for i in "befogadóképességű":
-    if valasz in i:
+for i in szo:
+    if valasz in szo:
         hely += 1
     else:
-        print("A betű nem található")
+        break
 print(f"A betű a {hely} helyen található")
+
 
