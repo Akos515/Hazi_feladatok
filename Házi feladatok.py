@@ -121,24 +121,36 @@
 #     print("csak 4-gyel osztható")
 # else:
 #     print("sem 3-mal, sem 4-gyel nem osztható!")
-import math
-
-sugar = int(input("Kérem a kör sugarát: "))
-kerulet = sugar * 2 * math.pi
-print(f"{round(kerulet)}")
+# import math
+#
+# sugar = int(input("Kérem a kör sugarát: "))
+# kerulet = sugar * 2 * math.pi
+# print(f"{round(kerulet)}")
 
 #A megadott szó: befogadóképességű
 #a felhasználótól kérjünk be egy karaktert és ellenőrizzük hogy megtalálható-e vagy sem a befogadóképességű szóban?
 #ha szerepel benne akkor hányadik karakter az?
 
-hely = 0
+# hely = 0
+# szo = "befogadóképességű"
+# valasz = input("Kérek egy betűt: ")
+# if valasz in szo:
+#     print("Találat!")
+#     for i in szo:
+#         if valasz in i:
+#             print(f"A betű a {hely + 1} helyen található")
+#         hely += 1
+# else:
+#     print("Nem található!")
+
+db = 0
 szo = "befogadóképességű"
 valasz = input("Kérek egy betűt: ")
-for i in szo:
-    if valasz in szo:
-        hely += 1
-    else:
-        break
-print(f"A betű a {hely} helyen található")
+if valasz in szo:
+    print("Találat")
+    while db < szo.find(valasz):
+        db += 1
+    print(f"A betű a {db+1}. helyen van")
 
-
+else:
+    print("Nincs találat")
