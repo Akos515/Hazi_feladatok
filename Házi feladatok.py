@@ -40,7 +40,7 @@
 #     print("az érdemjegy: 3")
 # elif 70 < x and x <85:
 #     print("az érdemjegy: 4")
-# elif 85 < x:
+# elif 85 <= x:
 #     print("az érdemjegy: 5")
 # print()
 
@@ -122,10 +122,10 @@
 # else:
 #     print("sem 3-mal, sem 4-gyel nem osztható!")
 # import math
-#
+# #
 # sugar = int(input("Kérem a kör sugarát: "))
 # kerulet = sugar * 2 * math.pi
-# print(f"{round(kerulet)}")
+# print(f"kerület: {round(kerulet)}")
 
 #A megadott szó: befogadóképességű
 #a felhasználótól kérjünk be egy karaktert és ellenőrizzük hogy megtalálható-e vagy sem a befogadóképességű szóban?
@@ -143,14 +143,26 @@
 # else:
 #     print("Nem található!")
 
-db = 0
-szo = "befogadóképességű"
-valasz = input("Kérek egy betűt: ")
-if valasz in szo:
-    print("Találat")
-    while db < szo.find(valasz):
-        db += 1
-    print(f"A betű a {db+1}. helyen van")
+# import random
+# szamoklista = [random.randrange(0,101,1) for elem in range(50)]
+#
+# for elem in szamoklista:
+#     if elem % 2 == 0:
+#         for i in elem:
+#             print(f"Páros számok: {i}")
 
-else:
-    print("Nincs találat")
+tanuloszam = 0
+jegyek = []
+print("írja be a tanulók érdemjegyét")
+while True:
+    tanuloszam += 1
+    adat = int(input(f"{tanuloszam}. tanuló:"))
+    jegyek.append(adat)
+    if adat == 0:
+        break
+a = (len(jegyek)-1)
+print(jegyek)
+print(f"ennyi jegyet kaptak a tanulók {a}")
+print(f" {jegyek.count(5)} tanuló kapott 5öst\n {jegyek.count(4)} tanuló kapott 4est\n {jegyek.count(3)} tanuló kapott 3mast\n {jegyek.count(2)} tanuló kapott 2est\n {jegyek.count(1)} tanuló kapott 1est\n")
+atlag = sum(jegyek) / a
+print(f"Az átlag {atlag}")
