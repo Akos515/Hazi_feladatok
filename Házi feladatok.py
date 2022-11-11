@@ -143,26 +143,30 @@
 # else:
 #     print("Nem található!")
 
-# import random
-# szamoklista = [random.randrange(0,101,1) for elem in range(50)]
-#
-# for elem in szamoklista:
-#     if elem % 2 == 0:
-#         for i in elem:
-#             print(f"Páros számok: {i}")
+import random
+szamoklista = [random.randrange(0,101,1) for elem in range(50)]
+print("páros számok:")
+for elem in szamoklista:
+    if elem % 2 == 0:
+        print(elem, end=", ")
+print()
+print("páratlan számok:")
+for elem in szamoklista:
+    if elem % 2 != 0:
+        print(elem, end=", ")
 
-tanuloszam = 0
-jegyek = []
-print("írja be a tanulók érdemjegyét")
-while True:
-    tanuloszam += 1
-    adat = int(input(f"{tanuloszam}. tanuló:"))
-    jegyek.append(adat)
-    if adat == 0:
-        break
-a = (len(jegyek)-1)
-print(jegyek)
-print(f"ennyi jegyet kaptak a tanulók {a}")
-print(f" {jegyek.count(5)} tanuló kapott 5öst\n {jegyek.count(4)} tanuló kapott 4est\n {jegyek.count(3)} tanuló kapott 3mast\n {jegyek.count(2)} tanuló kapott 2est\n {jegyek.count(1)} tanuló kapott 1est\n")
-atlag = sum(jegyek) / a
-print(f"Az átlag {atlag}")
+# tanuloszam = 0
+# jegyek = []
+# print("írja be a tanulók érdemjegyét")
+# while True:
+#     tanuloszam += 1
+#     adat = int(input(f"{tanuloszam}. tanuló:"))
+#     jegyek.append(adat)
+#     if adat == 0:
+#         break
+# a = (len(jegyek)-1)
+# print(jegyek)
+# print(f"ennyi jegyet kaptak a tanulók {a}")
+# print(f" {jegyek.count(5)} tanuló kapott 5öst\n {jegyek.count(4)} tanuló kapott 4est\n {jegyek.count(3)} tanuló kapott 3mast\n {jegyek.count(2)} tanuló kapott 2est\n {jegyek.count(1)} tanuló kapott 1est\n")
+# atlag = sum(jegyek) / a
+# print(f"Az átlag {atlag}")
