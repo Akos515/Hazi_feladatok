@@ -144,17 +144,20 @@
 #     print("Nem található!")
 
 import random
+paros = []
+paratlan = []
 szamoklista = [random.randrange(0,101,1) for elem in range(50)]
-print("páros számok:")
 for elem in szamoklista:
     if elem % 2 == 0:
-        print(elem, end=", ")
-print()
-print("páratlan számok:")
+        paros.append(elem)
 for elem in szamoklista:
     if elem % 2 != 0:
-        print(elem, end=", ")
-
+        paratlan.append(elem)
+print(f"páros számok száma: {len(paros)}, páratlan számok száma: {len(paratlan)}")
+#
+# print()
+# print("-"*50)
+#
 # tanuloszam = 0
 # jegyek = []
 # print("írja be a tanulók érdemjegyét")
@@ -170,3 +173,4 @@ for elem in szamoklista:
 # print(f" {jegyek.count(5)} tanuló kapott 5öst\n {jegyek.count(4)} tanuló kapott 4est\n {jegyek.count(3)} tanuló kapott 3mast\n {jegyek.count(2)} tanuló kapott 2est\n {jegyek.count(1)} tanuló kapott 1est\n")
 # atlag = sum(jegyek) / a
 # print(f"Az átlag {atlag}")
+
