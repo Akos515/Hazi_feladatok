@@ -179,8 +179,3 @@ m = int(input("Sorok szama: "))
 for i in range(m):
     print("*"*n)
 
-szam = int(input("Kérek egy számot: "))
-if szam % 2 == 0 and szam % 3 == 0:
-    print(True)
-else:
-    print(False)
