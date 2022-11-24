@@ -143,17 +143,17 @@
 # else:
 #     print("Nem található!")
 
-import random
-paros = []
-paratlan = []
-szamoklista = [random.randrange(0,101,1) for elem in range(50)]
-for elem in szamoklista:
-    if elem % 2 == 0:
-        paros.append(elem)
-for elem in szamoklista:
-    if elem % 2 != 0:
-        paratlan.append(elem)
-print(f"páros számok száma: {len(paros)}, páratlan számok száma: {len(paratlan)}")
+# import random
+# paros = []
+# paratlan = []
+# szamoklista = [random.randrange(0,101,1) for elem in range(50)]
+# for elem in szamoklista:
+#     if elem % 2 == 0:
+#         paros.append(elem)
+# for elem in szamoklista:
+#     if elem % 2 != 0:
+#         paratlan.append(elem)
+# print(f"páros számok száma: {len(paros)}, páratlan számok száma: {len(paratlan)}")
 #
 # print()
 # print("-"*50)
@@ -174,3 +174,13 @@ print(f"páros számok száma: {len(paros)}, páratlan számok száma: {len(para
 # atlag = sum(jegyek) / a
 # print(f"Az átlag {atlag}")
 
+n = int(input("Oszlopok szama: "))
+m = int(input("Sorok szama: "))
+for i in range(m):
+    print("*"*n)
+
+szam = int(input("Kérek egy számot: "))
+if szam % 2 == 0 and szam % 3 == 0:
+    print(True)
+else:
+    print(False)
